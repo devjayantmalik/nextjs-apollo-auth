@@ -18,4 +18,6 @@ const Home: NextPage = () => {
   );
 };
 
+Home.getInitialProps = async (context) => {};
+
 export default withAuth({ ssr: true })(Home);
