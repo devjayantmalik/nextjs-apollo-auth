@@ -1,6 +1,6 @@
 import { NextPage } from "next";
-import { withApollo } from "../lib/withApollo";
 import Head from "next/head";
+import { withAuth } from "../lib/withAuth";
 
 const Home: NextPage = () => {
   return (
@@ -18,4 +18,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default withApollo({ ssr: true })(Home);
+export default withAuth({ ssr: true })(Home);
